@@ -10,7 +10,7 @@ const PORT = 5000;
 const users = [
   {
     // username: "Canudin",
-    // avatar:git 
+    // avatar:
     //   "https://img.freepik.com/premium-vector/cute-potato-vegetable-character-mascot-with-cool-gesture-isolated-cartoon-flat-style-design_574864-227.jpg?w=2000",
   },
 ];
@@ -62,7 +62,7 @@ server.get("/tweets", (req, res) => {
     const avatar = userInfo.avatar;
     const username = lastTweets[index].username;
     const tweet = lastTweets[index].tweet;
-    lastTweetsWithAvatar.push({ username: username, avatar: avatar, tweet: tweet })
+    lastTweetsWithAvatar.push({ username: username, avatar: avatar, tweet: tweet });
   });
   console.log(lastTweetsWithAvatar);
   res.send(lastTweetsWithAvatar.reverse());
